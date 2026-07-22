@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tutorial Layanan Click WA — Kelurahan Serengan</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
@@ -383,6 +384,17 @@
     .flow{grid-template-columns:1fr;}
     .step::after{display:none;}
     .step{padding-bottom:44px;}
+  }
+  @media (max-width:480px){
+    body{padding:32px 16px 72px;}
+    h1{font-size:clamp(26px,7.5vw,32px);}
+    .sub{font-size:14.5px;}
+    .hero{gap:18px;}
+    .wa-cta{width:100%;justify-content:center;}
+    .tabs{gap:2px;}
+    .tab-btn{padding:10px 10px;font-size:12px;}
+    .step{padding-left:4px;padding-right:4px;}
+    .step-desc{max-width:none;}
   }
 
   .footnote{
