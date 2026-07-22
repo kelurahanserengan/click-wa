@@ -438,7 +438,7 @@
 
   <!-- ============ PANEL 1 — SURAT KETERANGAN ============ -->
   <div class="panel active" id="panel-1">
-    <p class="panel-intro">Tujuh langkah pengajuan <strong>Surat Keterangan</strong> — dari menyapa Click WA, memilih jenis surat, melengkapi persyaratan, mengunggah tiap berkas satu per satu, hingga permohonan diajukan ke petugas kelurahan.</p>
+    <p class="panel-intro">Delapan langkah pengajuan <strong>Surat Keterangan</strong> — dari menyapa Click WA, memilih jenis surat, mengisi rincian keperluan, mengunggah tiap berkas satu per satu, hingga permohonan diajukan ke petugas kelurahan.</p>
 
     <div class="flow">
 
@@ -484,7 +484,7 @@
           <div class="chatbody">
             <div class="bubble in">[1. SURAT KETERANGAN]<br>Layanan permohonan berbagai jenis surat keterangan di Kelurahan Serengan.<br><br><b>Persyaratan:</b><br>1. KTP&nbsp; 2. KK&nbsp; 3. Surat Pengantar RT/RW<br><br><b>Pilih Keperluan:</b><br>[A] Domisili&nbsp; [B] Usaha<br>[C] Tidak Mampu&nbsp; [D] SKCK<br>[E] Belum Menikah&nbsp; [X] Lainnya<br><span class="highlight">+ 10 pilihan lain</span>
               <span class="tm">10:03</span></div>
-            <div class="bubble out">A<span class="tm">10:04 ✓✓</span></div>
+            <div class="bubble out">B<span class="tm">10:04 ✓✓</span></div>
           </div>
           <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
         </div></div>
@@ -494,17 +494,33 @@
 
     <div class="flow" style="margin-top:-20px;">
 
-      <!-- Step 4 — Upload KTP -->
+      <!-- Step 4 — Isi rincian detail keperluan -->
       <div class="step">
-        <div class="step-head"><div class="num">4</div><div class="step-title">Unggah berkas KTP</div></div>
+        <div class="step-head"><div class="num">4</div><div class="step-title">Isi rincian detail keperluan</div></div>
+        <p class="step-desc">Setelah jenis surat dipilih, bot meminta warga menuliskan rincian keperluan secara singkat, lengkap dengan contoh format.</p>
+        <div class="phone"><div class="screen tall">
+          <div class="statusbar"><span>10:04</span><span>WhatsApp</span></div>
+          <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">mengetik…</div></div></div>
+          <div class="chatbody">
+            <div class="bubble in">Jenis Surat: <b>Surat Keterangan Usaha</b><br>📝 Silahkan tuliskan rincian detail keperluan Anda:<br><br>Contoh rincian:<br>• Surat Usaha: Memiliki usaha kerajinan blangkon di RT 2 RW 1<br>• Kredit Usaha: Syarat pengajuan kredit usaha mikro di Bank BRI/Jateng<br>• Pindah Agama: Pengurusan administrasi pindah agama dari Kristen ke Islam<br>• Tidak Mampu/KIP: Persyaratan pengajuan beasiswa anak sekolah<br>• Domisili: Syarat kelengkapan administrasi kerja/tempat tinggal<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
+              <span class="tm">10:04</span></div>
+            <div class="bubble out">Memiliki usaha kerajinan blangkon di RT 2 RW 1<span class="tm">10:05 ✓✓</span></div>
+          </div>
+          <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
+        </div></div>
+      </div>
+
+      <!-- Step 5 — Upload KTP -->
+      <div class="step">
+        <div class="step-head"><div class="num">5</div><div class="step-title">Unggah berkas KTP</div></div>
         <p class="step-desc">Bot menampilkan progres berkas (0/3) dan meminta warga mengirim foto/scan KTP terlebih dahulu.</p>
         <div class="phone"><div class="screen">
           <div class="statusbar"><span>10:05</span><span>WhatsApp</span></div>
           <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">Layanan Digital Kelurahan Serengan</div></div></div>
           <div class="chatbody">
-            <div class="bubble in">Keperluan terpilih: <b>Surat Keterangan Domisili</b><br>Progres berkas <span class="progress-track"><span></span><span></span><span></span></span>(0/3)<br>📎 Upload/Kirim berkas <b>KTP</b> Anda:<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
+            <div class="bubble in">Keperluan terpilih: <b>Surat Keterangan Usaha</b><br>Progres berkas <span class="progress-track"><span></span><span></span><span></span></span>(0/3)<br>📎 Upload/Kirim berkas <b>KTP</b> Anda:<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
               <span class="tm">10:05</span></div>
-            <div class="bubble out"><div class="media-card"><div class="fic">🪪</div><div class="fname">KTP_Warga.jpg</div></div><span class="tm">10:05 ✓✓</span></div>
+            <div class="bubble out"><div class="media-card"><div class="fic">🪪</div><div class="fname">KTP_Warga.jpg</div></div><span class="tm">10:06 ✓✓</span></div>
             <div class="bubble in">✅ Berkas KTP diterima. <span class="progress-track"><span class="done"></span><span></span><span></span></span>(1/3)
               <span class="tm">10:06</span></div>
           </div>
@@ -512,9 +528,9 @@
         </div></div>
       </div>
 
-      <!-- Step 5 — Upload KK -->
-      <div class="step">
-        <div class="step-head"><div class="num">5</div><div class="step-title">Unggah berkas KK</div></div>
+      <!-- Step 6 — Upload KK -->
+      <div class="step row-end">
+        <div class="step-head"><div class="num">6</div><div class="step-title">Unggah berkas KK</div></div>
         <p class="step-desc">Setelah KTP diterima, bot melanjutkan meminta foto/scan Kartu Keluarga (KK).</p>
         <div class="phone"><div class="screen">
           <div class="statusbar"><span>10:06</span><span>WhatsApp</span></div>
@@ -522,26 +538,8 @@
           <div class="chatbody">
             <div class="bubble in">📎 Upload/Kirim berkas <b>KK</b> (Kartu Keluarga) Anda:<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
               <span class="tm">10:06</span></div>
-            <div class="bubble out"><div class="media-card"><div class="fic">📘</div><div class="fname">KK_Warga.jpg</div></div><span class="tm">10:06 ✓✓</span></div>
+            <div class="bubble out"><div class="media-card"><div class="fic">📘</div><div class="fname">KK_Warga.jpg</div></div><span class="tm">10:07 ✓✓</span></div>
             <div class="bubble in">✅ Berkas KK diterima. <span class="progress-track"><span class="done"></span><span class="done"></span><span></span></span>(2/3)
-              <span class="tm">10:07</span></div>
-          </div>
-          <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
-        </div></div>
-      </div>
-
-      <!-- Step 6 — Upload Pengantar RT/RW -->
-      <div class="step row-end">
-        <div class="step-head"><div class="num">6</div><div class="step-title">Unggah Surat Pengantar RT/RW</div></div>
-        <p class="step-desc">Berkas terakhir yang diminta adalah Surat Pengantar RT/RW. Setelah diterima, berkas dinyatakan lengkap.</p>
-        <div class="phone"><div class="screen">
-          <div class="statusbar"><span>10:07</span><span>WhatsApp</span></div>
-          <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">mengetik…</div></div></div>
-          <div class="chatbody">
-            <div class="bubble in">📎 Upload/Kirim berkas <b>Surat Pengantar RT/RW</b> Anda:<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
-              <span class="tm">10:07</span></div>
-            <div class="bubble out"><div class="media-card"><div class="fic">📄</div><div class="fname">Pengantar_RTRW.jpg</div></div><span class="tm">10:07 ✓✓</span></div>
-            <div class="bubble in">✅ Berkas Pengantar RT/RW diterima. <span class="progress-track"><span class="done"></span><span class="done"></span><span class="done"></span></span>(3/3) Lengkap!<br>Ketik <b>AJUKAN</b> untuk mengirim permohonan Anda ke sistem Kelurahan Serengan.<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
               <span class="tm">10:07</span></div>
           </div>
           <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
@@ -552,9 +550,27 @@
 
     <div class="flow" style="margin-top:-20px;">
 
-      <!-- Step 7 — Ajukan & konfirmasi -->
+      <!-- Step 7 — Upload Pengantar RT/RW -->
+      <div class="step">
+        <div class="step-head"><div class="num">7</div><div class="step-title">Unggah Surat Pengantar RT/RW</div></div>
+        <p class="step-desc">Berkas terakhir yang diminta adalah Surat Pengantar RT/RW. Setelah diterima, berkas dinyatakan lengkap.</p>
+        <div class="phone"><div class="screen">
+          <div class="statusbar"><span>10:07</span><span>WhatsApp</span></div>
+          <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">mengetik…</div></div></div>
+          <div class="chatbody">
+            <div class="bubble in">📎 Upload/Kirim berkas <b>Surat Pengantar RT/RW</b> Anda:<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
+              <span class="tm">10:07</span></div>
+            <div class="bubble out"><div class="media-card"><div class="fic">📄</div><div class="fname">Pengantar_RTRW.jpg</div></div><span class="tm">10:08 ✓✓</span></div>
+            <div class="bubble in">✅ Berkas Pengantar RT/RW diterima. <span class="progress-track"><span class="done"></span><span class="done"></span><span class="done"></span></span>(3/3) Lengkap!<br>Ketik <b>AJUKAN</b> untuk mengirim permohonan Anda ke sistem Kelurahan Serengan.<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
+              <span class="tm">10:08</span></div>
+          </div>
+          <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
+        </div></div>
+      </div>
+
+      <!-- Step 8 — Ajukan & konfirmasi -->
       <div class="step row-end">
-        <div class="step-head"><div class="num">7</div><div class="step-title">Ajukan & terima konfirmasi</div></div>
+        <div class="step-head"><div class="num">8</div><div class="step-title">Ajukan & terima konfirmasi</div></div>
         <p class="step-desc">Warga mengetik <b>AJUKAN</b>. Petugas kelurahan menerima notifikasi untuk memverifikasi berkas, dan sesi otomatis selesai.</p>
         <div class="phone"><div class="screen">
           <div class="statusbar"><span>10:08</span><span>WhatsApp</span></div>
@@ -562,7 +578,7 @@
           <div class="chatbody">
             <div class="bubble out">AJUKAN<span class="tm">10:08 ✓✓</span></div>
             <div class="bubble in">🙏 Terima kasih! Permohonan Surat Keterangan Anda telah diajukan ke Kelurahan Serengan. Petugas kami akan segera memverifikasi berkas Anda.<br><br>Sesi pelayanan selesai. Jika Anda mengirim pesan kembali, menu utama akan otomatis terbuka.
-              <span class="tm">10:08</span></div>
+              <span class="tm">10:09</span></div>
           </div>
           <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
         </div></div>
@@ -718,7 +734,7 @@
 
   <!-- ============ PANEL 3 — PENGANTAR NIKAH ============ -->
   <div class="panel" id="panel-3">
-    <p class="panel-intro">Sepuluh langkah pengajuan <strong>Surat Pengantar Nikah</strong> — dari menyapa Click WA, enam berkas KTP/KK pihak terkait diunggah satu per satu, hingga permohonan diajukan ke petugas kelurahan.</p>
+    <p class="panel-intro">Sebelas langkah pengajuan <strong>Surat Pengantar Nikah</strong> — dari menyapa Click WA, enam berkas KTP/KK pihak terkait diunggah satu per satu, mengisi rencana pernikahan, hingga permohonan diajukan ke petugas kelurahan.</p>
 
     <div class="flow">
 
@@ -876,7 +892,7 @@
             <div class="bubble in">📎 Upload berkas <b>KTP Ayah Pasangan</b>:<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
               <span class="tm">12:08</span></div>
             <div class="bubble out"><div class="media-card"><div class="fic">👨</div><div class="fname">KTP_AyahPasangan.jpg</div></div><span class="tm">12:09 ✓✓</span></div>
-            <div class="bubble in">✅ Berkas KTP Ayah Pasangan diterima. <span class="progress-track"><span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span></span>(6/6) Lengkap!<br>Ketik <b>AJUKAN</b> untuk mengirim permohonan Pengantar Nikah.<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
+            <div class="bubble in">✅ Berkas KTP Ayah Pasangan diterima. <span class="progress-track"><span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span></span>(6/6) Lengkap!<br>💍 Silahkan masukkan <b>Data Rencana Pelaksanaan Pernikahan</b> Anda:<br>Tuliskan dengan format: Hari / Tanggal / Jam / Tempat Nikah<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
               <span class="tm">12:09</span></div>
           </div>
           <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
@@ -887,17 +903,35 @@
 
     <div class="flow" style="margin-top:-20px;">
 
-      <!-- Step 10 — Ajukan & konfirmasi -->
-      <div class="step row-end">
-        <div class="step-head"><div class="num">10</div><div class="step-title">Ajukan & terima konfirmasi</div></div>
-        <p class="step-desc">Warga mengetik <b>AJUKAN</b>. Petugas kelurahan menerima notifikasi untuk memverifikasi seluruh berkas.</p>
+      <!-- Step 10 — Data rencana pernikahan -->
+      <div class="step">
+        <div class="step-head"><div class="num">10</div><div class="step-title">Isi data rencana pernikahan</div></div>
+        <p class="step-desc">Warga menuliskan rencana hari, tanggal, jam, dan tempat pernikahan sesuai format contoh yang diberikan.</p>
         <div class="phone"><div class="screen">
-          <div class="statusbar"><span>12:09</span><span>WhatsApp</span></div>
+          <div class="statusbar"><span>12:10</span><span>WhatsApp</span></div>
           <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">mengetik…</div></div></div>
           <div class="chatbody">
-            <div class="bubble out">AJUKAN<span class="tm">12:09 ✓✓</span></div>
-            <div class="bubble in">🙏 Terima kasih! Dokumen Pengantar Nikah Anda telah diajukan ke Kelurahan Serengan.
+            <div class="bubble in">Contoh: Sabtu / 20 Agustus 2026 / 09.00 WIB / KUA Kecamatan Serengan (atau di Gedung / Masjid / Rumah)
+              <span class="tm">12:09</span></div>
+            <div class="bubble out">Sabtu / 20 Agustus 2026 / 09.00 WIB / KUA Kecamatan Serengan<span class="tm">12:10 ✓✓</span></div>
+            <div class="bubble in">✅ Data rencana pernikahan disimpan.<br>Ketik <b>AJUKAN</b> untuk mengirim permohonan Pengantar Nikah.<br><i>(Ketik MENU untuk ke awal / KELUAR untuk selesai)</i>
               <span class="tm">12:10</span></div>
+          </div>
+          <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
+        </div></div>
+      </div>
+
+      <!-- Step 11 — Ajukan & konfirmasi -->
+      <div class="step row-end">
+        <div class="step-head"><div class="num">11</div><div class="step-title">Ajukan & terima konfirmasi</div></div>
+        <p class="step-desc">Warga mengetik <b>AJUKAN</b>. Petugas kelurahan menerima notifikasi untuk memverifikasi seluruh berkas.</p>
+        <div class="phone"><div class="screen">
+          <div class="statusbar"><span>12:11</span><span>WhatsApp</span></div>
+          <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">mengetik…</div></div></div>
+          <div class="chatbody">
+            <div class="bubble out">AJUKAN<span class="tm">12:11 ✓✓</span></div>
+            <div class="bubble in">🙏 Terima kasih! Dokumen Pengantar Nikah Anda telah diajukan ke Kelurahan Serengan.
+              <span class="tm">12:11</span></div>
           </div>
           <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
         </div></div>
@@ -1151,7 +1185,7 @@
           <div class="statusbar"><span>09:16</span><span>WhatsApp</span></div>
           <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">Layanan Digital Kelurahan Serengan</div></div></div>
           <div class="chatbody">
-            <div class="bubble in">Bulan data terpilih: <b>Maret</b><br>Wilayah: RT 1 / RW 9<br><br><b>[LAHIR]</b><br>· Nama Lengkap: FAIZA<br>· Tanggal Lahir: 2026-03-23<br><br><b>[PINDAH]</b><br>· Nama Lengkap: SENO → Kab. Sukoharjo
+            <div class="bubble in">Bulan data terpilih: <b>Maret</b><br>Wilayah: RT 1 / RW 9<br><br><b>[LAHIR]</b><br>· Nama Lengkap: FAIZA NISA ZAHIRA<br>· Tanggal Lahir: 2026-03-23<br><br><b>[PINDAH]</b><br>· Nama Lengkap: SENO → Kab. Sukoharjo
               <span class="tm">09:16</span></div>
             <div class="bubble in">Ketik angka bulan lain (1–12) untuk melihat data lainnya.<br><i>MENU untuk kembali / KELUAR untuk selesai</i>
               <span class="tm">09:16</span></div>
