@@ -195,8 +195,6 @@
   .step{
     position:relative;
     padding:0 26px 60px;
-    display:flex;
-    flex-direction:column;
   }
   .step-head{
     display:flex;
@@ -250,9 +248,6 @@
     border-radius:34px;
     padding:9px;
     box-shadow:0 18px 40px -14px rgba(11,36,31,.35), 0 2px 6px rgba(11,36,31,.15);
-    display:flex;
-    flex-direction:column;
-    flex:1;
   }
   .screen{
     background:var(--wa-bg);
@@ -261,10 +256,9 @@
     position:relative;
     display:flex;
     flex-direction:column;
-    flex:1;
-    min-height:440px;
+    height:480px;
   }
-  .screen.tall{min-height:600px;}
+  .screen.tall{height:480px;}
   .statusbar{
     background:var(--wa-header);
     color:#fff;
@@ -294,19 +288,13 @@
   .chatbody{
     flex:1;
     background-color:var(--wa-bg);
-    padding:12px 10px;
+    padding:11px 9px;
     overflow:hidden;
     display:flex;
     flex-direction:column;
-    gap:7px;
-    font-size:10.8px;
-    line-height:1.45;
-  }
-  .screen.tall .chatbody{
-    font-size:10px;
-    line-height:1.4;
     gap:5px;
-    padding:10px 9px;
+    font-size:10.2px;
+    line-height:1.4;
   }
   .bubble{
     max-width:88%;
@@ -1177,7 +1165,7 @@
           <div class="chatbody">
             <div class="bubble in">[5. MONITOR DATA LAMPID WILAYAH]<br>Portal pemantauan data kependudukan (Lahir, Mati, Pindah, Datang) Tahun 2026 khusus Ketua RT/RW.<br><br>Silahkan Pilih Bulan Data Yang Ingin Dilihat:<br>[1] Januari&nbsp;&nbsp;[2] Februari&nbsp;&nbsp;[3] Maret<br>[4] April&nbsp;&nbsp;[5] Mei&nbsp;&nbsp;[6] Juni<br>[7] Juli&nbsp;&nbsp;[8] Agustus&nbsp;&nbsp;[9] September<br>[10] Oktober&nbsp;&nbsp;[11] November&nbsp;&nbsp;[12] Desember
               <span class="tm">09:15</span></div>
-            <div class="bubble out">Balas dengan angka bulan pilihan Anda <span class="highlight">(Contoh: 6)</span><span class="tm">✓✓</span></div>
+            <div class="bubble in">Balas dengan angka bulan pilihan Anda <span class="highlight">(Contoh: 6)</span><span class="tm">✓✓</span></div>
             <div class="bubble out">3<span class="tm">09:16 ✓✓</span></div>
           </div>
           <div class="inputbar"><div class="field">Ketik pesan</div><div class="send"></div></div>
@@ -1191,7 +1179,7 @@
           <div class="statusbar"><span>09:16</span><span>WhatsApp</span></div>
           <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">Layanan Digital Kelurahan Serengan</div></div></div>
           <div class="chatbody">
-            <div class="bubble in">Bulan data terpilih: <b>Maret</b><br>Wilayah: RT 1 / RW 9<br><br><b>[LAHIR]</b><br>· Nama Lengkap: FAIZA N**A Z****A<br>· Tanggal Lahir: 2026-03-23<br><br><b>[PINDAH]</b><br>· Nama Lengkap: SENO → Kab. Sukoharjo
+            <div class="bubble in">Bulan data terpilih: <b>Maret</b><br>Wilayah: RT 1 / RW 9<br><br><b>[LAHIR]</b><br>· Nama Lengkap: FAIZA N**A ZA***A<br>· Tanggal Lahir: 2026-03-23<br><br><b>[PINDAH]</b><br>· Nama Lengkap: SENO → Kab. Sukoharjo
               <span class="tm">09:16</span></div>
             <div class="bubble in">Ketik angka bulan lain (1–12) untuk melihat data lainnya.<br><i>MENU untuk kembali / KELUAR untuk selesai</i>
               <span class="tm">09:16</span></div>
