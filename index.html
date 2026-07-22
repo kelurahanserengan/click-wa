@@ -195,6 +195,8 @@
   .step{
     position:relative;
     padding:0 26px 60px;
+    display:flex;
+    flex-direction:column;
   }
   .step-head{
     display:flex;
@@ -248,6 +250,9 @@
     border-radius:34px;
     padding:9px;
     box-shadow:0 18px 40px -14px rgba(11,36,31,.35), 0 2px 6px rgba(11,36,31,.15);
+    display:flex;
+    flex-direction:column;
+    flex:1;
   }
   .screen{
     background:var(--wa-bg);
@@ -256,9 +261,10 @@
     position:relative;
     display:flex;
     flex-direction:column;
-    height:440px;
+    flex:1;
+    min-height:440px;
   }
-  .screen.tall{height:600px;}
+  .screen.tall{min-height:600px;}
   .statusbar{
     background:var(--wa-header);
     color:#fff;
@@ -1185,7 +1191,7 @@
           <div class="statusbar"><span>09:16</span><span>WhatsApp</span></div>
           <div class="chatheader"><div class="avatar">CW</div><div><div class="name">Click WA</div><div class="status">Layanan Digital Kelurahan Serengan</div></div></div>
           <div class="chatbody">
-            <div class="bubble in">Bulan data terpilih: <b>Maret</b><br>Wilayah: RT 1 / RW 9<br><br><b>[LAHIR]</b><br>· Nama Lengkap: FAIZA NISA ZAHIRA<br>· Tanggal Lahir: 2026-03-23<br><br><b>[PINDAH]</b><br>· Nama Lengkap: SENO → Kab. Sukoharjo
+            <div class="bubble in">Bulan data terpilih: <b>Maret</b><br>Wilayah: RT 1 / RW 9<br><br><b>[LAHIR]</b><br>· Nama Lengkap: FAIZA N**A Z****A<br>· Tanggal Lahir: 2026-03-23<br><br><b>[PINDAH]</b><br>· Nama Lengkap: SENO → Kab. Sukoharjo
               <span class="tm">09:16</span></div>
             <div class="bubble in">Ketik angka bulan lain (1–12) untuk melihat data lainnya.<br><i>MENU untuk kembali / KELUAR untuk selesai</i>
               <span class="tm">09:16</span></div>
